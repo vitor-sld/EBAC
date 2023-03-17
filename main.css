@@ -1,0 +1,98 @@
+* {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 780px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 7px;
+}
+
+header h1 {
+    margin: 35px 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+section h2 {
+    margin: auto;
+    width: 80%;
+    padding: 10px 20px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+form {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0 auto 35px auto;
+}
+
+
+section input[type="text"] {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+section input:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 3px;
+    background-color: orangered;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    outline: 2px solid rgba(0, 0, 0, 0.4);
+
+}
+
+section#uls {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 30px;
+
+}
+
+ul {
+    max-width: 500px;
+    margin: 0 auto 35px auto;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ul li button{
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 15px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+}
