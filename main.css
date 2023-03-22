@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 105vh;
+    background-image: linear-gradient(to left, red, blue);
+}
+
+aside {
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    transition: 1s;
+    display: none;
+    /*display: none;*/
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+ul {
+    border: 1px solid black;
+}
+ ul li{
+
+    padding: 10px 20px;
+    
+}
+
+li > p{
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.formSection {
+    width: 700px;
+    height: 500px;
+    margin: 50px auto;
+
+}
+
+.container {
+    padding: 40px;
+    background-color: white;
+    width: 500PX;
+    margin: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 5px 0px 4em rgba(0, 0, 0, 0.4);
+
+}
+
+section .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+
+}
+
+section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: purple;
+}
+
+hr {
+    width: 75%;
+    margin: 10px auto;
+}
+
+.titulo>p {
+    color: #696969;
+}
+
+form label,
+form input,
+form button {
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+form label {
+    font-size: 15px;
+    margin: 5px auto;
+}
+
+form input {
+
+    padding: 9px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+form button {
+    margin-top: 30px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background-color: purple;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 14px;
+    color: red;
+    margin-bottom: 10px;
+}
