@@ -1,0 +1,331 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ :target {
+     scroll-margin-top: .8em;
+ }
+
+ header {
+     width: 100%;
+     background-color: black;
+ }
+
+ .container {
+     width: 1024px;
+     margin: 0 auto;
+ }
+
+ img {
+     width: 100%;
+     display: block;
+     margin: auto;
+ }
+
+ header>.container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px 0;
+     color: white;
+ }
+
+ .container h1 {
+     font-size: 2.1em;
+     text-transform: uppercase;
+     border-bottom: 5px solid white;
+     font-weight: 700;
+ }
+
+ .buttonMobile {
+     display: none;
+ }
+
+ li {
+     display: inline-block;
+ }
+
+ li:first-of-type {
+     margin-right: 30px;
+ }
+
+ li a {
+     color: white;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 16px;
+     text-transform: uppercase;
+     padding: 2px;
+ }
+
+ li:hover {
+     border-bottom: 2px solid white;
+     transition: 0.2s ease;
+ }
+
+ img {
+     border-radius: 3px;
+     border-bottom: 5px solid white;
+     transition: .15s ease-in;
+     width: 100%;
+     display: block;
+ }
+
+ .slideTextos {
+     text-align: center;
+     width: 100%;
+     background-color: white;
+     padding: 15px 0;
+     text-transform: uppercase;
+     font-size: 1.1em;
+     border-bottom: 5px solid black;
+ }
+
+ .slideTextos h4 {
+     display: none;
+ }
+
+ h4.selecionado {
+     display: inline-block;
+ }
+
+ .sobreNos>.container {
+     margin: 50px auto 100px;
+     display: grid;
+     grid-template-columns: 55% auto;
+     column-gap: 7%;
+     grid-template-rows: 100%;
+ }
+
+ .shop {
+     margin-bottom: 50px;
+ }
+
+ .txtSobreNos h2 {
+     font-size: 40px;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     border-bottom: 5px solid black;
+     width: 60%;
+ }
+
+ .txtSobreNos p {
+     word-break: break-all;
+ }
+
+ .shop>.container {
+     display: grid;
+     grid-template-columns: repeat(3, 30%);
+     column-gap: 5%;
+ }
+
+ .shop {
+     margin: 50px auto;
+ }
+
+ .shop p {
+     word-break: break-all;
+ }
+
+ .shop div {
+     cursor: pointer;
+ }
+
+ .shop div h2 {
+     text-align: center;
+     font-size: 1.5em;
+     font-weight: 700;
+     margin: 10px 0;
+     text-transform: uppercase;
+ }
+
+ footer {
+     background-color: black;
+     color: white;
+     padding: 20px;
+     text-align: center;
+ }
+
+ @media screen and (min-width:641px) and (max-width:1023px) {
+     header {
+         width: 100%;
+     }
+
+     header>.container {
+         display: flex;
+         justify-content: space-evenly;
+     }
+
+     .container {
+         width: 100%;
+         max-width: 100%;
+     }
+
+     li {
+         display: inline-block;
+         font-size: 15px;
+         text-align: center;
+         margin: 10px 15px 10px 0;
+     }
+
+     nav {
+         padding: 20px 0 10px;
+     }
+
+
+     .sobreNos>.container {
+
+         grid-template-columns: auto;
+         grid-template-rows: auto;
+     }
+
+     .sobreNos img {
+         grid-row: 1;
+         max-height: 80vh;
+     }
+
+     .txtSobreNos h2 {
+         grid-row: 2;
+         text-align: center;
+         width: 80%;
+         margin: 30px auto;
+         font-size: 1.9em;
+     }
+
+     .txtSobreNos p {
+         width: 80%;
+         margin: auto;
+     }
+
+     .shop>.container {
+         display: grid;
+         grid-template-columns: auto auto;
+         column-gap: 10px;
+     }
+
+     .shop .container div {
+         margin: auto;
+         width: 300px;
+     }
+
+     .shop div p {
+         margin-bottom: 50px;
+         text-align: left;
+     }
+
+     .shop div img {
+         max-width: 300px;
+         margin-left: auto;
+         display: block;
+     }
+
+
+ }
+
+ @media screen and (max-width:640px) {
+
+
+     .container {
+         width: 100%;
+     }
+
+     img {
+         max-width: 400px;
+     }
+
+     header>.container {
+         display: block;
+     }
+
+     li {
+         width: 100%;
+         text-align: center;
+         margin: 10px auto;
+     }
+
+     .buttonMobile {
+         width: 200px;
+     }
+
+     button {
+         width: 40%;
+         border: 1px solid white;
+         background-color: black;
+         border-radius: 5px;
+         margin: 10px 30%;
+     }
+
+     button span {
+         display: block;
+         width: 40%;
+         height: 5px;
+         margin: 6px auto;
+         background-color: white;
+     }
+
+     .topMobile {
+         display: flex;
+         justify-content: space-between;
+         margin: auto;
+     }
+
+     nav {
+         padding: 20px 0 10px;
+     }
+
+     ul{
+        display: none;
+     }
+
+     .sobreNos>.container {
+
+         grid-template-columns: auto;
+         grid-template-rows: auto;
+     }
+
+     .sobreNos img {
+         grid-row: 1;
+     }
+
+     .txtSobreNos h2 {
+         grid-row: 2;
+         text-align: center;
+         width: 90%;
+         margin: 30px auto;
+         font-size: 1.9em;
+     }
+
+     .txtSobreNos p {
+         width: 90%;
+         margin: auto;
+     }
+
+     .shop>.container {
+         display: block;
+     }
+
+     .shop .container div {
+         margin: auto;
+         width: 90%;
+     }
+
+     .shop div p {
+         margin-bottom: 50px;
+     }
+
+     .shop div img {
+         max-width: 300px;
+         margin-left: auto;
+         display: block;
+     }
+     .buttonMobile{
+        display: block;
+     }
+ }
